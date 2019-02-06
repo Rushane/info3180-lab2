@@ -1,3 +1,36 @@
 body {
     padding-top: 5rem;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header'
+    'main main main'
+    'main main main';
+  grid-gap: 15px;
+  padding: 10px;
+}
+
+.item1 { 
+    grid-area: header; 
+    background-color: #3CB371;
+}
+.item2 { 
+  grid-area: main; 
+  
+}
+
+.img-circle {
+  width: 150px;
+  height: 150px;
+  display: block;
+  border-radius: 100px;
+  margin: auto;
+  margin-top: 10px;
+
+}
+
+.center-space {
+    text-align: center;
+}
