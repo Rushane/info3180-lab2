@@ -18,7 +18,6 @@ body {
 }
 .item2 { 
   grid-area: main; 
-  
 }
 
 .img-circle {
@@ -28,9 +27,51 @@ body {
   border-radius: 100px;
   margin: auto;
   margin-top: 10px;
+  padding-bottom: 10px;
 
 }
 
 .center-space {
     text-align: center;
+    color: white;
+}
+
+.center-space-two {
+    text-align: center;
+    
+}
+
+.profile-stats {
+        order: 1;
+        margin-top: 1.5rem;
+    }
+
+    .profile-stats ul {
+        display: flex;
+        text-align: center;
+        padding: 1.2rem 0;
+        list-style: none;
+    }
+
+    .profile-stats li {
+        font-size: 1.1rem;
+        flex: 1;
+        margin: 0;
+        font-weight: 100;
+    }
+
+    .profile-stat-count {
+        display: block;
+        font-weight: bold;
+    }
+    
+    .button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 12px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
 }
