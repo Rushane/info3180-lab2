@@ -7,7 +7,7 @@ This file creates your application.
 
 from app import app
 from flask import render_template, request, redirect, url_for, flash
-from datetime import datetime
+import datetime
 
 ###
 # Routing for your application.
@@ -26,16 +26,13 @@ def about():
     
 @app.route('/profile')
 def profile():
-    dateVar = format_date_joined('2019,2,1')
-    return render_template('profile.html',name=dateVar) 
+ return render_template('profile.html') 
  
 def format_date_joined(date_entry): # Enter a date (i.e. 2017,7,1)
     year, month, day = map(int, date_entry.split(','))
-    dateVar = datetime(year, month, day)
-    #print("Profile Created: " + dateVar.strftime('%B, %Y')) 
-    return dateVar.strftime('%B, %Y') 
-    
-    
+    date = datetime(year, month, day)
+    #return date.strftime('%B') + "," + date.strftime('%Y')
+    print "Joined " + date.strftime('%B, %Y')  
     
 
 
